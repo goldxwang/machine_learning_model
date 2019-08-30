@@ -65,3 +65,12 @@ plot.show()
 result=LR_reg.predict(scaler_t)
 df_result=pd.DataFrame(result)
 df_result.to_csv("result.csv")
+
+#绘图看测试数据预测结果
+plot.figure(figsize=(10,7))       #画布大小
+num=100
+x=np.arange(1,num+1)              #取100个点进行比较
+plot.plot(x,target[:num],label='target')      #目标取值
+plot.plot(x,preds[:num],label='preds')        #预测取值
+plot.legend(loc='upper right')  #线条显示位置
+plot.show()
