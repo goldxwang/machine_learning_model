@@ -65,7 +65,7 @@ y表示我们要求的销售价格，x表示特征值。需要调用sklearn库�
 ```python
 #读取数据
 housing = pd.read_csv('kc_train.csv')
-target=pd.read_csv('kc_train2.csv')  #销售价格
+target=pd.read_csv('kc_train2.csv')  #销售价格(需要到训练集中分离出来)
 t=pd.read_csv('kc_test.csv')         #测试数据
 
 #数据预处理
