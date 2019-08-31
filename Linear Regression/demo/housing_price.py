@@ -65,3 +65,5 @@ plot.show()
 result=LR_reg.predict(scaler_t)
 df_result=pd.DataFrame(result)
 df_result.to_csv("result.csv")
+
+#修改测试
